@@ -19,10 +19,12 @@ import {
     starbucks,
     tesla,
     shopify,
-    carrent,
-    jobit,
-    tripguide,
     threejs,
+    runInStyle,
+    trinity,
+    netflix,
+    dressCustomizer,
+    clearSki
   } from "../assets";
   
   export const navLinks = [
@@ -46,7 +48,7 @@ import {
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "React Developer",
       icon: mobile,
     },
     {
@@ -116,55 +118,30 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
+      title: "Internship",
+      company_name: "Brototype",
       icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      iconBg: "#E6DEDD",
+      date: "October 2022 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
+      title: "BSc Statistics",
+      company_name: "Calicut University",
       icon: tesla,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "2019 - 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
+      title: "Higher-Secondary Education",
+      company_name: "Bharatiya Vidya Bhavans",
       icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
       iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      date: "2017 - 2019",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
   ];
@@ -198,67 +175,348 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Trinity",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Picture a bustling online marketplace where travelers can explore luxurious resorts, each with its own distinctive charm and breathtaking locations. Welcome to my resort booking project, where i connect eager travelers and families with their ideal getaway destinations.",
       tags: [
         {
-          name: "react",
+          name: "React.js",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "TypeScript",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "Tailwind CSS",
           color: "pink-text-gradient",
         },
+        {
+          name: "Material UI",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Chart.js",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Formik",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Toastify",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Twilio",
+          color: "green-text-gradient",
+        },
+        {
+          name: "RazorPay",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Redux-Toolkit",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Flowbite ",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Yup",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Express.js",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Node.js",
+          color: "green-text-gradient",
+        },
+        {
+          name: "MongoDB",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Repositary Pattern",
+          color: "green-text-gradient",
+        },
+        {
+          name: "JWT",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Multer ",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Cloudinary",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "RestApi",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Bcrypt",
+          color: "green-text-gradient",
+        },
+        {
+          name: "AWS",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "EC2-Instance",
+          color: "green-text-gradient",
+        },
+        {
+          name: "nginx",
+          color: "green-text-gradient",
+        },
+
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: trinity,
+      source_code_link: "https://github.com/Anaks-CT/Resort_Management_BACKEND",
+      live_link: 'https://trinity.anaksct.tech/',
+      features: [
+        'Twilio mobile OTP verification',
+        'Point system for rewarding users',
+        'Wide range of Room packages and Rooms',
+        'Secure Razorpay payment gateway Integration',
+        'Special membership program as loyality scheme',
+        "Wishlist for saving preffered dates",
+        'Fully fledged admin and manager dashboards',
+        "Gallary management for all resorts",
+        'FAQ management'
+      ]
     },
     {
-      name: "Job IT",
+      name: "Run-In-Style",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "stylish and trendy shoe paradise, where you'll discover the ultimate destination for footwear enthusiasts with a user-friendly interface and seamless shopping experience.",
       tags: [
         {
-          name: "react",
+          name: "EJS",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "RestApi",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "SweetAlert ",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Express.js",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Node.js",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "MongoDB",
           color: "pink-text-gradient",
         },
+        {
+          name: "Mongoose",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Bcrypt",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Session",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Multer",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Nodemailer",
+          color: "green-text-gradient",
+        },
+        {
+          name: "PayPal",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "nginx",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Route53",
+          color: "pink-text-gradient",
+        }
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: runInStyle,
+      source_code_link: "https://github.com/Anaks-CT/shoe-ecommerce",
+      live_link: 'https://runinstyle.co/',
+      features: [
+        'nodemailer email OTP verification',
+        'Banner display and management',
+        'fully fledged search sort filter page',
+        'Wishlist for saving liked items',
+        'Shopping Cart for adding items to be checked out',
+        "Change Password and reset password",
+        'Ratings and reviews for items',
+        "Coupons for item discounts",
+        'Fully fledged admin dashboards',
+        'Orders and order Status management',
+        'Invoice for Orders placed',
+        'Fully functional product management',
+      ]
     },
     {
-      name: "Trip Guide",
+      name: "Dress Customizer",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Explore our virtual 3D space and unleash your creativity by selecting your desired shirt color with the interactive color picker. Elevate your style further by adding logos and color gradients from your local files, ensuring a unique and expressive design.",
       tags: [
         {
-          name: "nextjs",
+          name: "React.js",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "ThreeJs",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "Framer Motion",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "React Color",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Valtio",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Vite",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Tailwind",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Cloudinary",
+          color: "green-text-gradient",
+        },
+        {
+          name: "unsplashAPI",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Netlify",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: dressCustomizer,
+      source_code_link: "https://github.com/Anaks-CT/Dress-Customizer",
+      live_link: 'https://dress-customizer.netlify.app/',
+      features: [
+        'Impliment color picker for adding colors',
+        'Shirt logo from local files',
+        'Image as color gradient for the shirt from local files',
+        'Added unsplash API to get images for logo and Color gradient',
+        'Mobile responsive',
+      ]
+    },
+
+    {
+      name: "Clear-Ski",
+      description:
+        "ultimate weather forecasting app! With Clear Ski, you can stay ahead of the weather no matter where you are. Simply input any city, and instantly access comprehensive weather details about that location. From current temperature and humidity levels to wind speed and atmospheric pressure, we've got you covered with real-time weather updates. plan your days with confidence using our accurate forecast details for the upcoming days",
+      tags: [
+        {
+          name: "React.js",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "TypeScript",
+          color: "green-text-gradient",
+        },
+        {
+          name: "React-Select-Async-Paginate",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "React-Swipeable",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Luxon",
+          color: "green-text-gradient",
+        },
+        {
+          name: "DOM",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Vite",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Netlify",
+          color: "green-text-gradient",
+        },
+      ],
+      image: clearSki,
+      source_code_link: "https://github.com/Anaks-CT/Weather-App",
+      live_link: 'https://clear-ski.netlify.app/',
+      features: [
+        'Added live location time and date',
+        'Used openWeatherAPi for the weather Data',
+        'Degree celcius and farenheit convertible',
+        'Weather and forcast for all the cities',
+        'Mobile responsive'
+      ]
+    },
+    {
+      name: "Netflix clone",
+      description:
+        "This is a post login Netflix clone. a React-based mini-project developed for learning purposes. In this exciting project, I've utilized data from the tmdb database to showcase a collection of movies. Explore the world of cinema right from this clone and enjoy the movie trailers of your favorite films!",
+      tags: [
+        {
+          name: "React.js",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Axios ",
+          color: "green-text-gradient",
+        },
+        {
+          name: "CSS",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "React YouTube",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "DOM",
+          color: "green-text-gradient",
+        },
+        {
+          name: "API",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: netflix,
+      source_code_link: "https://github.com/Anaks-CT/netflix_clone_postLoginPage_react",
+      live_link: 'https://anaks-ct.github.io/netflix_clone_postLoginPage_react/',
+      features: [
+        'Used advaced CSS for styling',
+        'Used TMDB API for movie datas',
+        'Mobile responsive',
+      ]
     },
   ];
   

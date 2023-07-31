@@ -14,6 +14,8 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  live_link,
+  features
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -23,10 +25,11 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+        className='bg-tertiary p-5 rounded-2xl sm:w-[480px] w-full'
       >
-        <div className='relative w-full h-[230px]'>
+        <div className='relative w-full h-[230px] cursor-pointer' onClick={() => window.open(live_link, "_blank")}>
           <img
+            
             src={image}
             alt='project_image'
             className='w-full h-full object-cover rounded-2xl'
@@ -34,7 +37,7 @@ const ProjectCard = ({
 
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
             <div
-              onClick={() => window.open(source_code_link, "_blank")}
+              onClick={(e) => {e.stopPropagation(); window.open(source_code_link, "_blank")}}
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
             >
               <img
@@ -47,10 +50,23 @@ const ProjectCard = ({
         </div>
 
         <div className='mt-5'>
-          <h3 className='text-white font-bold text-[24px]'>{name}</h3>
+          <div className="flex items-center justify-between">
+            <h3 className='text-white font-bold text-[24px]'>{name}</h3>
+            <h3 onClick={() => window.open(live_link, "_blank")} className='px-2 cursor-pointer text-blue-600 underline-offset-2 underline'>Go Live</h3>
+          </div>
           <p className='mt-2 text-secondary text-[14px]'>{description}</p>
         </div>
-
+        <div className="mt-4 font-bold tracking-wider">Features</div>
+        <ul className='mt-5 list-disc ml-5 space-y-2'>
+        {features.map((point, index) => (
+          <li
+            key={`experience-point-${index}`}
+            className='text-white-100 text-[14px] pl-1 tracking-wider'
+          >
+            {point}
+          </li>
+        ))}
+      </ul>
         <div className='mt-4 flex flex-wrap gap-2'>
           {tags.map((tag) => (
             <p
@@ -87,7 +103,7 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className='mt-20 flex flex-wrap gap-7'>
+      <div className='mt-20 flex flex-wrap justify-center gap-14'>
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}

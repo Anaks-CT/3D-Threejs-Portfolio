@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import logo from "./logo.jpg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -26,9 +26,11 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import trinity from "./Trinity.jpg";
+import runInStyle from "./runInStyle.jpg";
+import netflix from "./netflix.jpg";
+import dressCustomizer from './dress_customizer.png'
+import clearSki from './clearSki.png'
 
 export {
   logo,
@@ -56,7 +58,9 @@ export {
   shopify,
   starbucks,
   tesla,
-  carrent,
-  jobit,
-  tripguide,
+  netflix,
+  runInStyle,
+  trinity,
+  dressCustomizer,
+  clearSki
 };
