@@ -24,7 +24,8 @@ import {
     trinity,
     netflix,
     dressCustomizer,
-    clearSki
+    clearSki,
+    chitChat
   } from "../assets";
   
   export const navLinks = [
@@ -429,7 +430,75 @@ import {
         'Mobile responsive',
       ]
     },
-
+    {
+      name: "Chit-Chat",
+      description:
+        " ultimate socializing platform that brings people together! start connecting with friends and new acquaintances through seamless messaging. Form your own groups and engage in lively conversations with like-minded individuals. Customize your group names to reflect the essence of your discussions, and enjoy the freedom to add or remove participants as needed. Stay updated with our handy notification bar, ensuring you never miss a new message. Experience the joy of real-time interactions, just like your favorite messaging app.",
+      tags: [
+        {
+          name: "Socket.io",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Chakra-UI",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Framer Motion",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "React-Lottie",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "React-Notification-Badge",
+          color: "green-text-gradient",
+        },
+        {
+          name: "React-Scrollable-Feed",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Tailwind",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Cloudinary",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Node.js",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Express.js",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Mongoose",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Bcrypt.js",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "jwt",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: chitChat,
+      source_code_link: "https://github.com/Anaks-CT/Chat-application_Frontend",
+      live_link: 'https://chitcha.netlify.app/',
+      features: [
+        'One on One Chat',
+        'Group Chat',
+        'Group admin and their functionalities',
+        'Implimented Socket.io',
+        'Mobile responsive',
+      ]
+    },
     {
       name: "Clear-Ski",
       description:

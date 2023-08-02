@@ -31,6 +31,7 @@ import runInStyle from "./runInStyle.jpg";
 import netflix from "./netflix.jpg";
 import dressCustomizer from './dress_customizer.png'
 import clearSki from './clearSki.png'
+import chitChat from './chit-chat.png'
 
 export {
   logo,
@@ -62,5 +63,6 @@ export {
   runInStyle,
   trinity,
   dressCustomizer,
-  clearSki
+  clearSki,
+  chitChat
 };
