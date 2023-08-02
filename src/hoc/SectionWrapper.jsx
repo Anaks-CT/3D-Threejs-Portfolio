@@ -8,7 +8,7 @@ const StarWrapper = (Component, idName) =>
     return (
       <motion.section
         variants={staggerContainer()}   
-        initial='hidden' // hiding it at first
+        initial={`${idName !== "works" && "hidden"}`} // hiding it at first
         whileInView='show' // lazy
         viewport={{ once: true, amount: 0.25 }}
         className={`${styles.padding} max-w-7xl mx-auto relative z-0`}
